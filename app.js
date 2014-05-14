@@ -24,8 +24,8 @@ app.post('/min', function(req, res) {
   _min(url, res);
 });
 
-http.createServer(app).listen('3000', function(){
-  console.log('Express server listening on port 3000');
+http.createServer(app).listen('8363', function(){
+  console.log('Express server listening on port 8363');
 });
 
 ////////////////
