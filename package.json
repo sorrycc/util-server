@@ -1,0 +1,36 @@
+{
+  "name": "util-server",
+  "version": "0.1.0",
+  "description": "util server for frontend developers",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec --require should ./test/",
+    "server": "./node_modules/.bin/nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sorrycc/util-server"
+  },
+  "keywords": [
+    "util",
+    "server"
+  ],
+  "author": "chencheng <sorrycc@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sorrycc/util-server/issues"
+  },
+  "homepage": "https://github.com/sorrycc/util-server",
+  "dependencies": {
+    "body-parser": "^1.2.0",
+    "clean-css": "^2.1.8",
+    "express": "^4.2.0",
+    "morgan": "^1.0.1",
+    "request": "^2.34.0",
+    "uglify-js": "^2.4.13"
+  },
+  "devDependencies": {
+    "mocha": "^1.18.2",
+    "should": "^3.3.1"
+  }
+}
