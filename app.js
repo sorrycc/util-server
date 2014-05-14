@@ -14,24 +14,18 @@ app.get('/', function(req, res) {
   res.send('hello');
 });
 
-app.get('/min/:url', function(req, res) {
-  var url = req.param('url');
-  _min(url, res);
-});
+app.get('/min/:url', _min);
+app.post('/min', _min);
 
-app.post('/min', function(req, res) {
-  var url = req.param('url');
-  _min(url, res);
-});
-
-http.createServer(app).listen('8363', function(){
+module.exports = http.createServer(app).listen('8363', function(){
   console.log('Express server listening on port 8363');
 });
 
 ////////////////
-// Helpers
+// Routes.
 
-function _min(url, res) {
+function _min(req, res) {
+  var url = req.param('url');
   min(url, function(err, content) {
     if (err) res.send(403, {
       message: String(err)
