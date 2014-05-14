@@ -1,7 +1,7 @@
 {
   "name": "util-server",
   "version": "0.1.0",
-  "description": "util server for frontend developers",
+  "description": "a server for frontend utils, like js and css min, ...",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec --require should ./test/",
