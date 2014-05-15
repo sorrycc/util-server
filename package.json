@@ -24,6 +24,7 @@
   "dependencies": {
     "body-parser": "^1.2.0",
     "clean-css": "^2.1.8",
+    "connect-busboy": "0.0.1",
     "express": "^4.2.0",
     "morgan": "^1.0.1",
     "request": "^2.34.0",
