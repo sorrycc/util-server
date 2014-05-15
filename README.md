@@ -5,20 +5,19 @@ a server for frontend utils, like js and css min, ...
 
 ## Usage
 
-min by get
+### min
+
 ```bash
+# get
 $ curl http://localhost:8363/min/https%3A%2F%2Fs.tbcdn.cn%2Fcdnstatus.js
-```
 
-min by post
-```bash
+# post
 $ curl -d "url=http://a.tbcdn.cn/cdnstatus.js" http://localhost:8363/min
-```
 
-min by put
-```bash
+# put
 $ curl -X PUT -F "f=@cdnstatus.js" http://localhost:8363/min
 ```
+
 
 ## LISENCE
 
