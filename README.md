@@ -1,4 +1,4 @@
-# util-server
+# util-server [![Build Status](https://travis-ci.org/sorrycc/util-server.svg)](https://travis-ci.org/sorrycc/util-server)
 
 a server for frontend utils, like js and css min, ...
 
