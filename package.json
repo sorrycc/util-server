@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec --require should ./test/",
-    "start": "./node_modules/.bin/nodemon app.js"
+    "start": "./node_modules/.bin/forever start app.js",
+    "stop": "./node_modules/.bin/forever stop app.js",
+    "startdev": "./node_modules/.bin/nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -31,6 +33,7 @@
     "uglify-js": "^2.4.13"
   },
   "devDependencies": {
+    "forever": "^0.11.1",
     "mocha": "^1.18.2",
     "nodemon": "^1.0.19",
     "should": "^3.3.1"
